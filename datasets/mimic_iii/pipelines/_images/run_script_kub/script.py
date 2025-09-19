@@ -159,5 +159,5 @@ if __name__ == "__main__":
         source_bq_dataset=os.environ["SOURCE_BQ_DATASET"],
         target_project_id=os.environ["TARGET_PROJECT_ID"],
         target_bq_dataset=os.environ["TARGET_BQ_DATASET"],
-        timeout=int(os.getenv("TIMEOUT", 1200)),
+        timeout=int(os.getenv("TIMEOUT", 3600)),
     )
