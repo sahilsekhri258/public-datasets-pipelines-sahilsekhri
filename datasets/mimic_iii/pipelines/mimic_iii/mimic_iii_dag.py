@@ -39,7 +39,6 @@ with DAG(
         namespace="composer-user-workloads",
         service_account_name="default",
         config_file="/home/airflow/composer_kube_config",
-        startup_timeout_seconds=600,
         image_pull_policy="Always",
         image="{{ var.json.mimic_iii.container_registry.run_script_kub }}",
         env_vars={
